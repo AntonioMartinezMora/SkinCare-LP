@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&family=Fondamento&family=Jost&family=Lily+Script+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #8B9F87;
+    --brown: #BBA397;
+    --orange: #F9BFA9;
+    --yellow: #FDEED5;
+    --light: #FEFBF6;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+/* General Settings */
+.center__cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* TOP BAR ==============*/
+h1{
+    font-size: 40px;
+}
+
+#top{
+    height: 50px;
+    width: 100%;
+    background-color: var(--orange);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top h3{
+    color: var(--light);
+    font-family: 'Jost', sans-serif;
+}
+
+#top .icons{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons .icon{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Navigation ===========*/
+nav{
+    height: 15vh;
+    width: 100%;
+    border-bottom: 5px solid var(--orange);
+}
+
+nav .menu__item{
+    font-family: 'Anaheim', sans-serif;
+    color: black;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.menu__item:hover{
+    color: var(--green);
+}
+
+/* Main Container =========*/
+#main__container{
+    background-color: var(--yellow);
+    height: 50vh;
+    width: 100%;
+}
+
+.main__content{
+    height: 100%;
+    width: 80vw;
+    max-width: 1300px;
+}
+
+.main__content .info{
+    width: 30%;
+    text-align: center;
+}
+
+.info p{
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+.info .btn{
+    color: var(--light);
+    background-color: var(--orange);
+    border: solid 1px var(--orange);
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    border: solid 1px var(--orange);
+    background-color: var(--light);
+    color: var(--orange);
+}
+
+.main__img{
+    background: url(imgs/Main-Image.png);
+    height: 100%;
+    width: 60%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Products ==========*/
+#products{
+    margin: 2rem;
+}
+
+.products__container{
+    margin-top: 2rem;
+    width: 80vw;
+    max-width: 900px;
+}
+
+.product button{
+    background-color: var(--orange);
+    border: none;
+    color: var(--light);
+    padding: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/* Features ==========*/
+#features{
+    height: 30vh;
+    background-color: var(--yellow);
+}
+
+#features h1{
+    color: var(--light);
+    background-color: var(--orange);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.features__container{
+    margin-top: 2rem;
+    width: 80vw;
+    max-width: 800px;
+}
+
+/* Footer */
+footer{
+    margin: auto;
+    width: 80vw;
+    max-width: 1200px;
+    padding: 3rem;
+}
+
+footer .footer__column{
+    align-items: flex-start;
+}
+
+.footer__column h5{
+    text-transform: uppercase;
+    color: var(--orange);
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.footer__column a{
+    color: black;
+    margin: 5px 0;
+}
+
+form{
+    display: flex;
+}
+
+form input{
+    width: 320px;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    border: solid 3px var(--orange);
+}
+
+form input::placeholder{
+    color: var(--brown);
+}
+
+form button{
+    height: 40px;
+    border: solid 4px var(--orange);
+    background-color: var(--orange);
+    padding: 0 10px;
+    color: var(--light);
+    cursor: pointer;
+    outline: none;
+}
+
+.social{
+    margin: 10px 0;
+}
+
+.social .fab{
+    font-size: 30px;
+    color: var(--brown);
+}
+
+/* Page Bottom =============*/
+#page__bottom{
+    width: 100%;
+    height: 60px;
+    border-top: 4px solid var(--yellow);
+}
+
+.legal__links{
+    width: 80vw;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.legal__links a{
+    margin-right: 40px;
+    color: var(--brown);
+}
